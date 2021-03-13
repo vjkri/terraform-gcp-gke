@@ -1,0 +1,8 @@
+---
+lockfile_version: 1
+depends:
+- name: gcp-resources
+  resolved_source:
+    url: https://github.com/inspec/inspec-gcp/archive/master.tar.gz
+    sha256: d8f3ff31b0b6aa1a9ea17ee2e9d676145f62f0cc0a94e55be0c70cc7607eb88d
+  version_constraints: []
