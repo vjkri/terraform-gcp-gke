@@ -1,0 +1,13 @@
+name: gkecheck
+title: InSpec Profile
+maintainer: vkris6
+copyright: vkris6
+copyright_email: vijaykrishnamurthy8@gmail.com
+license: MIT
+summary: InSpec GCP Cluster Demo
+version: 0.1.0
+depends:
+  - name: gcp-resources
+    url: https://github.com/inspec/inspec-gcp/archive/master.tar.gz
+supports:
+  - platform: gcp

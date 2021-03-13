@@ -1,0 +1,30 @@
+---
+name : instance
+attributes:
+  - name: gcp_project_id
+    required: true
+    type: string
+  - name: gcp_location
+    required: true
+    type: string
+  - name: cluster_name
+    required: true
+    type: string
+depends:
+  - name: inspec-gcp
+    url: https://github.com/inspec/inspec-gcp/archive/master.tar.gz
+---
+name : node_standard
+attributes:
+  - name: gcp_project_id
+    required: true
+    type: string
+  - name: gcp_location
+    required: true
+    type: string
+  - name: cluster_name
+    required: true
+    type: string
+depends:
+  - name: inspec-gcp
+    url: https://github.com/inspec/inspec-gcp/archive/master.tar.gz
