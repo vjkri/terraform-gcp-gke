@@ -1,6 +1,7 @@
-project_name: newdemo-246311
-cluster_name: my-cluster
-cluster_zone: europe-west1-b
-node_pool_name_standard: standard
-node_pool_name_highmem: highmem
-network_name: vpc-subnetwork
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
