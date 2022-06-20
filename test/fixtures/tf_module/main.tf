@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-terraform {
-  # Use a GCS Bucket as a backend
-  backend "gcs" {
-    bucket = "newdemo-246311-terraform-state"
-  }
-}
 
 # Local values assign a name to an expression, that can then be used multiple
 # times within a module. They are used here to determine the GCP region from
