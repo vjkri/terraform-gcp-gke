@@ -8,10 +8,6 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-
-- job: myJob
-    workspace:
-      clean: outputs | resources | all # what to clean up before the job runs
       
 steps:
 - script: echo Hello, world!
