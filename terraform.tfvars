@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-gcp_project_id = "newdemo-246311"
+gcp_project_id = "gpe-ar-001"
 
 cluster_name = "my-cluster"
 
