@@ -11,8 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+terraform {
+  # This project requires a terraform version >= 0.11 but < 0.12. This is
+  # because the module is only tested with 0.11 ,and has not yet been upgraded
+  # to use the new 0.12 syntax.
+  required_version = "=> 0.16"
 
-
+  # Use a GCS Bucket as a backend
+  backend "gcs" {
+    bucket = "newdemo-246311-terraform-state"
+  }
+}
 # Local values assign a name to an expression, that can then be used multiple
 # times within a module. They are used here to determine the GCP region from
 # the given location, which can be either a region or zone.
