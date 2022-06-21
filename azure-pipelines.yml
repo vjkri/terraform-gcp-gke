@@ -17,13 +17,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: CmdLine@2
-  inputs:
-    script: 'rm -rf .terraform'
-- task: TerraformInstaller@0
-  inputs:
-    terraformVersion: '1.2.2'
-    
+
 - task: TerraformTaskV3@3
   inputs:
     provider: 'gcp'
