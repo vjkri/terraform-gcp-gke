@@ -18,6 +18,10 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: TerraformInstaller@0
+  inputs:
+    terraformVersion: 'latest'
+    
 - task: TerraformTaskV3@3
   inputs:
     provider: 'gcp'
