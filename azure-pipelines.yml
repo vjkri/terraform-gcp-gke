@@ -18,6 +18,12 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: Cache@2
+  displayName: 'Register TF cache'
+  inputs:
+    key: terraform | $(Agent.OS) | "$(Build.BuildNumber)" | $(Build.SourceVersion) | $(tfComponent) | "$(tfVarFileName)"
+    path: $(tfExecutionDir)
+
 - task: TerraformTaskV3@3
   inputs:
     provider: 'gcp'
