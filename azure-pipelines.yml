@@ -22,7 +22,7 @@ steps:
     script: 'rm -rf .terraform'
 - task: TerraformInstaller@0
   inputs:
-    terraformVersion: 'latest'
+    terraformVersion: '1.2.2'
     
 - task: TerraformTaskV3@3
   inputs:
